@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import androidx.navigation.fragment.findNavController
+import androidx.recyclerview.widget.RecyclerView
 
 /**
  * A simple [Fragment] subclass as the default destination in the navigation.
@@ -28,4 +29,6 @@ class FirstFragment : Fragment() {
             findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
         }
     }
+
 }
+data class User(val name: String, val address: String)

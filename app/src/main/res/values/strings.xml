@@ -11,4 +11,5 @@
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="hello_my_little_pussy" />
     <string name="button" />
+    <string name="click_me" />
 </resources>
