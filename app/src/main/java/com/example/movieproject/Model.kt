@@ -1,9 +1,11 @@
 package com.example.movieproject
 
-import android.os.Parcelable
-import kotlinx.android.parcel.Parcelize
+import com.google.gson.annotations.SerializedName
 
-
-@Parcelize
-class Model(val title:String ,val description:String,val imageURL:String):Parcelable {
-}
+class Model(
+    val title: String,
+    @SerializedName("overview")
+    val description:String,
+    @SerializedName("poster_path")
+    val imageURL:String
+)
